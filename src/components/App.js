@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import phonesFromApi from './data/phones.json';
-import './App.css';
+import phonesFromApi from '../data/phones.json';
+import '../App.css';
 
 const App = () => {
   const [phones] = useState(phonesFromApi);
