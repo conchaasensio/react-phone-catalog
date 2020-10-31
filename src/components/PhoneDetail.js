@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PhoneDetail = (props) => {
   return (
@@ -20,7 +21,9 @@ const PhoneDetail = (props) => {
           </ul>
         </div>
       </section>
-      <button>Volver</button>
+      <Link className="btn__return" to="/">
+        <button>Volver</button>
+      </Link>
     </div>
   );
 };

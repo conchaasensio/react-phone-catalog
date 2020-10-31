@@ -6,6 +6,7 @@ const PhoneCatalog = (props) => {
     return (
       <li className="phone__item" key={phone.id}>
         <Phone
+          id={phone.id}
           name={phone.name}
           price={phone.price}
           image={phone.imageFileName}
