@@ -1,11 +1,15 @@
 import React from 'react';
+import Phone from './Phone';
 
 const PhoneCatalog = (props) => {
   const phones = props.phones.map((phone, index) => {
     return (
       <li className="phone__item" key={index}>
-        <h2>{phone.name}</h2>
-        <img src={phone.imageFileName} alt={phone.name} />
+        <Phone
+          name={phone.name}
+          price={phone.price}
+          image={phone.imageFileName}
+        />
       </li>
     );
   });
