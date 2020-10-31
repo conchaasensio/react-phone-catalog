@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "iPhone 7",
+    "manufacturer": "Apple",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 769,
+    "imageFileName": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFEEpuN5hClvKpdlEh9v5MYshzS717Y7PHSQ&usqp=CAU",
+    "screen": "4,7 inch IPS",
+    "processor": "A10 Fusion",
+    "ram": 2
+    },
+    {
+      "id": 1,
+      "name": "Samsung Galaxy 8",
+      "manufacturer": "Apple",
+      "description": "lorem ipsum dolor sit amet consectetur.",
+      "color": "black",
+      "price": 857,
+      "imageFileName": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7zoGKigpcsDgVU_tz6mSGJh_F2QMuBl2nww&usqp=CAU",
+      "screen": "4,7 inch IPS",
+      "processor": "A10 Fusion",
+      "ram": 2
+      }
+]
