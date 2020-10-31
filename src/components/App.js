@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import getApiData from '../api-server/api';
 import PhoneCatalog from './PhoneCatalog';
 import PhoneDetail from './PhoneDetail';
@@ -12,7 +13,8 @@ function App() {
   }, []);
 
   const renderPhoneDetail = (props) => {
-    const phone = phones[1];
+    const routePhoneId = parseInt(props.match.params.id);
+    const phone = phones.find((phone) => phone.id === routePhoneId);
     if (phone) {
       return (
         <PhoneDetail
@@ -33,8 +35,12 @@ function App() {
   return (
     <div className="App">
       <h1>Catálogo de teléfonos</h1>
-      <PhoneCatalog phones={phones} />
-      {renderPhoneDetail()}
+      <Switch>
+        <Route exact path="/">
+          <PhoneCatalog phones={phones} />
+        </Route>
+        <Route path="/phone/:id" render={renderPhoneDetail} />
+      </Switch>
     </div>
   );
 }
