@@ -13,11 +13,11 @@ const PhoneDetail = (props) => {
           <ul>
             <li>{`Fabricante: ${props.manufacturer}`}</li>
             <li>{`Descripción: ${props.description}`}</li>
-            <li>{`Precio: ${props.price}`}</li>
+            <li>{`Precio: ${props.price}€`}</li>
             <li>{`Color: ${props.color}`}</li>
             <li>{`Pantalla: ${props.screen}`}</li>
             <li>{`Procesador: ${props.processor}`}</li>
-            <li>{`Memoria ram: ${props.ram}`}</li>
+            <li>{`Memoria ram: ${props.ram}GB`}</li>
           </ul>
         </div>
       </section>

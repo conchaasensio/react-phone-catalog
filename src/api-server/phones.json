@@ -1,26 +1,110 @@
 [
   {
     "id": 0,
-    "name": "iPhone 7",
+    "name": "iPhone 12 Pro",
     "manufacturer": "Apple",
     "description": "lorem ipsum dolor sit amet consectetur.",
     "color": "black",
-    "price": 769,
-    "imageFileName": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFEEpuN5hClvKpdlEh9v5MYshzS717Y7PHSQ&usqp=CAU",
+    "price": 1159,
+    "imageFileName": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-pro-graphite-hero?wid=470&hei=556&fmt=png-alpha&.v=1601620625000",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  },
+  {
+    "id": 1,
+    "name": "iPhone 12",
+    "manufacturer": "Apple",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 909,
+    "imageFileName": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-black-select-2020?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1601684204000",
     "screen": "4,7 inch IPS",
     "processor": "A10 Fusion",
-    "ram": 2
-    },
-    {
-      "id": 1,
-      "name": "Samsung Galaxy 8",
-      "manufacturer": "Apple",
-      "description": "lorem ipsum dolor sit amet consectetur.",
-      "color": "black",
-      "price": 857,
-      "imageFileName": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7zoGKigpcsDgVU_tz6mSGJh_F2QMuBl2nww&usqp=CAU",
-      "screen": "4,7 inch IPS",
-      "processor": "A10 Fusion",
-      "ram": 2
-      }
+    "ram": 64
+  },
+  {
+    "id": 2,
+    "name": "iPhone 11",
+    "manufacturer": "Apple",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "white",
+    "price": 689,
+    "imageFileName": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-white-select-2019_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1567021770073",
+    "screen": "4,7 inch IPS",
+    "processor": "A13 Bionic",
+    "ram": 64
+  },
+  {
+    "id": 3,
+    "name": "Galaxy Z Fold",
+    "manufacturer": "Samsung",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 2009,
+    "imageFileName": "https://images.samsung.com/is/image/samsung/es-galaxy-z-fold2-f916-black-sm-f916bzkaphe-frontmysticblack-thumb-295388089?$PF_PRD_PNG$",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  },
+  {
+    "id": 4,
+    "name": "Galaxy Z Flip",
+    "manufacturer": "Samsung",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "rose gold",
+    "price": 1550,
+    "imageFileName": "https://images.samsung.com/is/image/samsung/es-galaxy-z-flip-5g-f707-sm-f707bznaphe-frontmysticbronze-thumb-278302892?$PF_PRD_PNG$",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  },
+  {
+    "id": 5,
+    "name": "Galaxy S20",
+    "manufacturer": "Samsung",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 729,
+    "imageFileName": "https://images.samsung.com/is/image/samsung/es-galaxy-s20-fe-g780-sm-g780fzbheub-frontcloudnavy-thumb-310836010?$PF_PRD_PNG$",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  },
+  {
+    "id": 6,
+    "name": "HUAWEI P40 Pro",
+    "manufacturer": "Huawei",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "silver frost",
+    "price": 899,
+    "imageFileName": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/list-image/phones/p40-pro/p40-pro-silver.png",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  },
+  {
+    "id": 7,
+    "name": "HUAWEI P30",
+    "manufacturer": "Huawei",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 599,
+    "imageFileName": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/list-image/phones/p30-pro/P30Pro_black.png",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  },
+  {
+    "id": 8,
+    "name": "HUAWEI Y6p",
+    "manufacturer": "Huawei",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "purple",
+    "price": 129,
+    "imageFileName": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/y6p/y6s-listimage-purple.png",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  }
 ]
