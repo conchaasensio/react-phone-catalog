@@ -37,6 +37,31 @@
   },
   {
     "id": 3,
+    "name": "iPhone SE",
+    "manufacturer": "Apple",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "red",
+    "price": 489,
+    "imageFileName": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-se-red-select-2020_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1586574260374",
+    "screen": "4,7 inch IPS",
+    "processor": "A13 Bionic",
+    "ram": 64
+  },
+  {
+    "id": 4,
+    "name": "iPhone XR",
+    "manufacturer": "Apple",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "white",
+    "price": 589,
+    "imageFileName": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-xr-white-select-201809?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1551226036668",
+    "screen": "4,7 inch IPS",
+    "processor": "A13 Bionic",
+    "ram": 64
+  },
+
+  {
+    "id": 5,
     "name": "Galaxy Z Fold",
     "manufacturer": "Samsung",
     "description": "lorem ipsum dolor sit amet consectetur.",
@@ -48,7 +73,7 @@
     "ram": 128
   },
   {
-    "id": 4,
+    "id": 6,
     "name": "Galaxy Z Flip",
     "manufacturer": "Samsung",
     "description": "lorem ipsum dolor sit amet consectetur.",
@@ -60,7 +85,7 @@
     "ram": 128
   },
   {
-    "id": 5,
+    "id": 7,
     "name": "Galaxy S20",
     "manufacturer": "Samsung",
     "description": "lorem ipsum dolor sit amet consectetur.",
@@ -72,7 +97,44 @@
     "ram": 128
   },
   {
-    "id": 6,
+    "id": 8,
+    "name": "Galaxy Note20",
+    "manufacturer": "Samsung",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "green",
+    "price": 959,
+    "imageFileName": "https://images.samsung.com/is/image/samsung/es-galaxy-note20-n980-sm-n980fzggeub-frontmysticgreen-thumb-282458549?$PF_PRD_PNG$",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  },
+  {
+    "id": 9,
+    "name": "Galaxy Note0",
+    "manufacturer": "Samsung",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "blue",
+    "price": 325,
+    "imageFileName": "https://images.samsung.com/is/image/samsung/es-galaxy-note9-n960-sm-n960fzbhphe-frontblue-thumb-111944862?$PF_PRD_PNG$",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  },
+  {
+    "id": 10,
+    "name": "Galaxy A31",
+    "manufacturer": "Samsung",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 299,
+    "imageFileName": "https://images.samsung.com/is/image/samsung/es-galaxy-a31-sm-a315gzkueub-front-thumb-274630449?$PF_PRD_PNG$",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 64
+  },
+
+  {
+    "id": 11,
     "name": "HUAWEI P40 Pro",
     "manufacturer": "Huawei",
     "description": "lorem ipsum dolor sit amet consectetur.",
@@ -84,7 +146,7 @@
     "ram": 128
   },
   {
-    "id": 7,
+    "id": 12,
     "name": "HUAWEI P30",
     "manufacturer": "Huawei",
     "description": "lorem ipsum dolor sit amet consectetur.",
@@ -96,7 +158,7 @@
     "ram": 128
   },
   {
-    "id": 8,
+    "id": 13,
     "name": "HUAWEI Y6p",
     "manufacturer": "Huawei",
     "description": "lorem ipsum dolor sit amet consectetur.",
@@ -106,5 +168,53 @@
     "screen": "4,7 inch IPS",
     "processor": "A14 Bionic",
     "ram": 128
+  },
+  {
+    "id": 14,
+    "name": "HUAWEI P Smart S",
+    "manufacturer": "Huawei",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 229,
+    "imageFileName": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p-smart-s/midnight-black.png",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  },
+  {
+    "id": 15,
+    "name": "HUAWEI Y5p",
+    "manufacturer": "Huawei",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 89,
+    "imageFileName": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/y5p/black.png",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 128
+  },
+  {
+    "id": 16,
+    "name": "OnePlus 8 Pro",
+    "manufacturer": "Oneplus",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 909,
+    "imageFileName": "https://image01.oneplus.net/ebp/202003/30/1-m00-12-6c-rb8bwl6bkxqanwlpaahnodotaxo639_840_840.png",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 8
+  },
+  {
+    "id": 17,
+    "name": "OnePlus 7T",
+    "manufacturer": "Oneplus",
+    "description": "lorem ipsum dolor sit amet consectetur.",
+    "color": "black",
+    "price": 539,
+    "imageFileName": "https://image01.oneplus.net/ebp/202003/04/1-m00-11-92-rb8bwl5favyag4u_aaivyrse7g8326_840_840.png",
+    "screen": "4,7 inch IPS",
+    "processor": "A14 Bionic",
+    "ram": 8
   }
 ]
