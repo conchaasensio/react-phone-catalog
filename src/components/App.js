@@ -4,6 +4,7 @@ import getApiData from '../api-server/api';
 import PhoneCatalog from './PhoneCatalog';
 import PhoneDetail from './PhoneDetail';
 import '../stylesheets/App.scss';
+import ClipLoader from 'react-spinners/ClipLoader';
 
 function App() {
   const [phones, setPhones] = useState([]);
@@ -37,6 +38,7 @@ function App() {
       <h1>Catálogo de teléfonos</h1>
       <Switch>
         <Route exact path="/">
+          {phones.length === 0 && <ClipLoader size={150} color={'#123abc'} />}
           <PhoneCatalog phones={phones} />
         </Route>
         <Route path="/phone/:id" render={renderPhoneDetail} />
