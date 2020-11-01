@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import getApiData from '../api-server/api';
 import PhoneCatalog from './PhoneCatalog';
 import PhoneDetail from './PhoneDetail';
-import '../App.css';
+import '../stylesheets/App.scss';
 
 function App() {
   const [phones, setPhones] = useState([]);
