@@ -1,0 +1,21 @@
+.phone__information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &-container {
+    padding: rem(5);
+    font-size: rem(11);
+
+    .phone__title {
+      color: black;
+      font-size: rem(11);
+      margin-bottom: rem(5);
+    }
+    .phone__price {
+      color: black;
+    }
+  }
+  .phone__image {
+    width: 100%;
+  }
+}

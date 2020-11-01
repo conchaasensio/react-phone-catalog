@@ -4,7 +4,7 @@ import Phone from './Phone';
 const PhoneCatalog = (props) => {
   const phones = props.phones.map((phone) => {
     return (
-      <li className="phone__item" key={phone.id}>
+      <li className="phone__list-item" key={phone.id}>
         <Phone
           id={phone.id}
           name={phone.name}
