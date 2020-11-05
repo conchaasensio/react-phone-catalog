@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import getApiData from '../api-server/api';
+import Header from './Header';
 import PhoneCatalog from './PhoneCatalog';
 import PhoneDetail from './PhoneDetail';
 import '../stylesheets/App.scss';
@@ -35,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Catálogo de teléfonos</h1>
+      <Header />
       <Switch>
         <Route exact path="/">
           {phones.length === 0 && <ClipLoader size={150} color={'#123abc'} />}
