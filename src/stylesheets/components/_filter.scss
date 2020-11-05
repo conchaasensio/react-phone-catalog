@@ -1,0 +1,12 @@
+.radius__filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+
+  label {
+    padding-right: 10px;
+  }
+}
