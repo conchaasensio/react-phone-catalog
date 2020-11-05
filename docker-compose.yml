@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  server:
+    image: node:12-alpine
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./server:/code:delegated
+    working_dir: /code
+    command: npm start
+  client:
+    image: node:12-alpine
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./client:/code:delegated
+    working_dir: /code
+    command: npm start
