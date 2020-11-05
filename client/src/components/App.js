@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import getApiData from '../api-server/api';
+import getApiData from '../server/api';
 import Header from './Header';
 import PhoneCatalog from './PhoneCatalog';
 import PhoneDetail from './PhoneDetail';
