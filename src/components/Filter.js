@@ -2,23 +2,15 @@ import React from 'react';
 
 const Filter = () => {
   return (
-    <div className="radius__filter">
-      <label htmlFor="apple">
-        <input id="filterapple" type="radio" value="" name="filterapple" />
-        Apple
-      </label>
-      <label htmlFor="samsung">
-        <input id="filtersamsung" type="radio" value="" name="filtersamsung" />
-        Samsung
-      </label>
-      <label htmlFor="huawei">
-        <input id="filterhuawei" type="radio" value="" name="filterhuawei" />
-        Huawei
-      </label>
-      <label htmlFor="oneplus">
-        <input id="filteroneplus" type="radio" value="" name="filteroneplus" />
-        Oneplus
-      </label>
+    <div className="select__filter">
+      <label htmlFor="filterPhone">SmartPhone</label>
+      <select name="filterPhone" id="filterPhone" className="select__input">
+        <option value="all">Todos</option>
+        <option value="Apple">Apple</option>
+        <option value="Huawei">Huawei</option>
+        <option value="Samnsung">Samnsung</option>
+        <option value="Oneplus">Oneplus</option>
+      </select>
     </div>
   );
 };
