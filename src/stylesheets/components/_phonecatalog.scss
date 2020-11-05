@@ -11,10 +11,10 @@
     border-radius: 5px;
     width: rem(150);
     height: rem(200);
-    background-color: #1fb0c7;
     &:hover {
-      border: 2px solid rgb(85, 254, 1);
-      box-shadow: 9px 2px 48px 7px rgba(111, 216, 19, 0.61);
+      border: 2px solid gray;
+      box-shadow: 9px 2px 48px 7px grey;
+      background-color: whitesmoke;
     }
   }
 

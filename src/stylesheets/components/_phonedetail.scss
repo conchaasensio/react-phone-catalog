@@ -12,23 +12,23 @@
     width: rem(100);
     height: rem(40);
     text-align: center;
-    color: rgb(85, 254, 1);
+    color: rgb(153, 140, 140);
     border-radius: 60px;
-    border: 2px solid rgb(85, 254, 1);
+    border: 2px solid grey;
     margin: 0 auto;
     margin-top: rem(20);
     font-size: rem(18);
     transition: all 1s ease;
     cursor: pointer;
     &:hover {
-      background-color: rgb(85, 254, 1);
+      background-color: whitesmoke;
       color: rgb(0, 0, 0);
     }
   }
 }
 
 .phone__container {
-  background-color: #1fb0c7;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -44,7 +44,7 @@
 .phone__text {
   display: flex;
   flex-direction: column;
-  color: #ebebeb;
+  color: black;
   line-height: 1.6;
 
   h2 {

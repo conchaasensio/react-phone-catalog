@@ -22,7 +22,7 @@ const PhoneDetail = (props) => {
         </div>
       </section>
       <Link className="btn__return" to="/">
-        <button>Volver</button>
+        <i className="fas fa-angle-left"></i> Atrás
       </Link>
     </div>
   );
