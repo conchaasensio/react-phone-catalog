@@ -6,6 +6,14 @@ import PhoneCatalog from './PhoneCatalog';
 import PhoneDetail from './PhoneDetail';
 import '../stylesheets/App.scss';
 import ClipLoader from 'react-spinners/ClipLoader';
+import { css } from '@emotion/core';
+
+const override = css`
+  display: block;
+  position: relative;
+  top: 100px;
+  left: 50%:
+`;
 
 function App() {
   const [phones, setPhones] = useState([]);
@@ -53,7 +61,9 @@ function App() {
       <Header filterPhone={filterPhone} handleFilterPhone={handleFilterPhone} />
       <Switch>
         <Route exact path="/">
-          {phones.length === 0 && <ClipLoader size={150} color={'#123abc'} />}
+          {phones.length === 0 && (
+            <ClipLoader size={150} color={'#123abc'} css={override} />
+          )}
           <PhoneCatalog
             filterPhone={filterPhone}
             phones={renderFilteredPhones()}
