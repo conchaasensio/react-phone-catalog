@@ -17,11 +17,21 @@ const Filter = (props) => {
         value={props.filterPhone}
         onChange={handleFilterPhoneChild}
       >
-        <option value="all">Todos</option>
-        <option value="Apple">Apple</option>
-        <option value="Huawei">Huawei</option>
-        <option value="Samsung">Samsung</option>
-        <option value="Oneplus">Oneplus</option>
+        <option className="select__input-option" value="all">
+          Todos
+        </option>
+        <option className="select__input-option" value="Apple">
+          Apple
+        </option>
+        <option className="select__input-option" value="Huawei">
+          Huawei
+        </option>
+        <option className="select__input-option" value="Samsung">
+          Samsung
+        </option>
+        <option className="select__input-option" value="Oneplus">
+          Oneplus
+        </option>
       </select>
     </div>
   );

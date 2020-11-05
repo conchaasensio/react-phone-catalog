@@ -1,12 +1,21 @@
 .select__filter {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  margin-left: 20px;
+  align-items: center;
+  margin-bottom: 10px;
+  @include tablet {
+    margin-top: 30px;
+  }
+  @include desktop {
+    padding-top: 5px;
+  }
 }
 
 .select__input {
   margin-left: 10px;
+  &-option {
+    font-size: rem(10);
+  }
 }
