@@ -9,10 +9,17 @@ import ClipLoader from 'react-spinners/ClipLoader';
 
 function App() {
   const [phones, setPhones] = useState([]);
+  const [filterPhone, setFilterPhone] = useState('all');
 
   useEffect(() => {
     getApiData().then((data) => setPhones(data));
   }, []);
+
+  const handleFilterPhone = (data) => {
+    if (data.key === 'filterPhone') {
+      setFilterPhone(data.value);
+    }
+  };
 
   const renderPhoneDetail = (props) => {
     const routePhoneId = parseInt(props.match.params.id);
@@ -33,14 +40,24 @@ function App() {
       );
     }
   };
+  const renderFilteredPhones = () => {
+    return phones.filter(isFilteredPhone);
+  };
+
+  function isFilteredPhone(phone) {
+    return filterPhone === 'all' || phone.manufacturer === filterPhone;
+  }
 
   return (
     <div className="App">
-      <Header />
+      <Header filterPhone={filterPhone} handleFilterPhone={handleFilterPhone} />
       <Switch>
         <Route exact path="/">
           {phones.length === 0 && <ClipLoader size={150} color={'#123abc'} />}
-          <PhoneCatalog phones={phones} />
+          <PhoneCatalog
+            filterPhone={filterPhone}
+            phones={renderFilteredPhones()}
+          />
         </Route>
         <Route path="/phone/:id" render={renderPhoneDetail} />
       </Switch>
