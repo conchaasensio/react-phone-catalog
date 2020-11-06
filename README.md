@@ -1,10 +1,122 @@
-# Getting Started with Create React App
+# 📱 REACT - Phone Catalog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a code test proposed by GuideSmiths for a Frontend developer selection process. The challenge is to create a phone catalogue app.
 
-## Available Scripts
+## Minimum requirements
 
-In the project directory, you can run:
+- A **REST API** providing phone´s information.
+  - It can be implemented in whatever language you are most comfortable with (NodeJS / Rails / Java, ...).
+  - It should have at least one endpoint:
+    - Method: GET.
+    - Path: */phones*.
+  
+- A **REACT APP** allowing the user to browse the phones catalog.
+  - The look and feel should not be super sophisticated, but it should be decent and somehow responsive so that it doesn´t look terrible on a mobile phone.
+  - The home page should display the list of phones. Make sure to display images of them.
+  - It should be possible to select a given phone and obtain the phone details view displaying a few more info about that phone.
+  - The phone´s information should be retrieved from the above described API.
+  - There should be a spinner or placeholder component while the REST API request ongoing and the app is waiting for phones data.
+
+## 🚀 Getting started
+### Pre-requeriments
+
+You need to have either ```Node``` or ```Docker```previously installed in your computer.
+
+To start using this project, clone this repo to a new directory.
+```https://github.com/conchaasensiomr/react-phone-catalog.git```
+
+#### ➡️ Node
+
+You have to go to server and run npm install in order to install the necesary dependencies.
+```cd server``` ```npm install```
+Now you need to do the same thing on the client side.
+```cd client``` ``` npm install ```
+
+Once you have installed the dependencies, you are ready to run the app with ```npm start ```. Like above, we need to do it both in server and client sides.
+```cd server``` ```npm start```
+```cd client ``` ```npm start```
+
+#### 🐳 Docker
+
+In case you are using Docker, first of all you need to write the following commands on your terminal:
+```docker-compose run server npm install```
+```docker-compose run client npm install```
+
+Once we have it installed, we introduce this command to run the app: ```docker-compose upp```
+
+## ⚒️ Process
+
+### Building the REST API
+
+I have faced some challenges along the app building process. One of them at the very beginning, which was using a REST API implemented in NodeJS. 
+
+Up to now I have always used public APIs to get the requested information. Therefore, the first challeng I had to face was to provide the phone´s information using NodeJS.
+
+In this case, I have chosen ```Express```to create a REST API with a ```GET``` endpoint.
+
+Once I have my js file, in this case, ```api-server.js```, I import the Express framework:
+```javascript
+const express = require('express');
+```
+Now, I create the Express app:
+```javascript
+const app = express();
+```
+And set our port, which in this case is 4000, since port 3000 is being used by App.js.
+```javascript
+const port = 4000;
+```
+Now we can create the ```GET``` endopoint:
+```javascript
+app.get('/phones', (req, res) => {
+  res.send(phonesFromApi);
+});
+```
+At this point, we start our clients:
+```javascript
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}/phones`);
+});
+```
+
+At this point, I discovered something called ```CORS```. If you are not yet familiar with it, but you would like to, [click here](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) for further information. For now, let´s just install the middleware and configure it:
+```javascript
+$ npm install --save cors
+```
+We will be using the ```phones JSON```to store our collection of phones, simulating a database.
+```javascript
+
+let phonesFromApi = JSON.parse(fs.readFileSync('./phones.json'));
+```
+Finally, we create an endpoint where we have our JSON response with all the phones from the API:
+```javascript
+app.get('/phones', (req, res) => {
+  res.send(phonesFromApi);
+});
+``` 
+
+### Retrieving data from API
+
+Once we have our API working, the next step is to retrieve the data from it. We do it through ```api.js```file located in ```client/src/services/api.js```. We export a function with a fetch inside, which will be called later from our App component:
+```javascript
+const getDataFromAPi = () => {
+  return fetch('http://localhost:4000/phones').then((response) =>
+    response.json()
+  );
+};
+
+export default getDataFromAPi;
+```
+
+### Fetching data and Updating State with Hooks.
+
+
+
+
+
+
+
+
 
 ### `npm start`
 
