@@ -13,6 +13,7 @@ const Filter = (props) => {
       <select
         name="filterPhone"
         id="filterPhone"
+        data-testid="filterPhone"
         className="select__input"
         value={props.filterPhone}
         onChange={handleFilterPhoneChild}
