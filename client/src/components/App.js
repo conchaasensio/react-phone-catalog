@@ -21,31 +21,17 @@ function App() {
     }
   };
 
-  const renderPhoneDetail = (props) => {
-    const routePhoneId = parseInt(props.match.params.id);
-    const phone = phones.find((phone) => phone.id === routePhoneId);
-    if (phone) {
-      return (
-        <PhoneDetail
-          name={phone.name}
-          image={phone.imageFileName}
-          manufacturer={phone.manufacturer}
-          description={phone.description}
-          price={phone.price}
-          color={phone.color}
-          screen={phone.screen}
-          processor={phone.processor}
-          ram={phone.ram}
-        />
-      );
-    }
-  };
   const renderFilteredPhones = () => {
     return phones.filter(isFilteredPhone);
   };
 
   function isFilteredPhone(phone) {
     return filterPhone === 'all' || phone.manufacturer === filterPhone;
+  }
+
+  function getSelectedPhone(id) {
+    const routePhoneId = parseInt(id);
+    return phones.find((phone) => phone.id === routePhoneId);
   }
 
   return (
@@ -59,7 +45,12 @@ function App() {
             phones={renderFilteredPhones()}
           />
         </Route>
-        <Route path="/phone/:id" render={renderPhoneDetail} />
+        <Route
+          path="/phone/:id"
+          render={(props) => (
+            <PhoneDetail phone={getSelectedPhone(props.match.params.id)} />
+          )}
+        ></Route>
       </Switch>
     </div>
   );
