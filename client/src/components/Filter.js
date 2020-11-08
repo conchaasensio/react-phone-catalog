@@ -9,7 +9,7 @@ const Filter = (props) => {
   };
   return (
     <div className="select__filter">
-      <label htmlFor="filterPhone">SmartPhone</label>
+      <label htmlFor="filterPhone">Marca</label>
       <select
         name="filterPhone"
         id="filterPhone"
@@ -19,7 +19,7 @@ const Filter = (props) => {
         onChange={handleFilterPhoneChild}
       >
         <option className="select__input-option" value="all">
-          Todos
+          Todas
         </option>
         <option className="select__input-option" value="Apple">
           Apple
