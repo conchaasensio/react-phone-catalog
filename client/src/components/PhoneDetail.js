@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PhoneDetail = (props) => {
-  const phone = props.phone;
+  const phone = props.phone || {};
   return (
     <div className="phone__detail-container">
       <section className="phone__container">
