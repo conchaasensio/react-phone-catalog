@@ -1,6 +1,6 @@
 # 📱 REACT - Phone Catalog
 
-This project is a code test proposed by GuideSmiths for a Frontend developer selection process. The challenge is to create a phone catalogue app.
+This project is a code test for a Frontend developer selection process. The challenge is to create a phone catalogue app.
 
 ## Minimum requirements
 
@@ -23,7 +23,9 @@ This project is a code test proposed by GuideSmiths for a Frontend developer sel
 You need to have either ```Node``` or ```Docker```previously installed in your computer.
 
 To start using this project, clone this repo to a new directory.
-```https://github.com/conchaasensiomr/react-phone-catalog.git```
+> ```console
+>  git clone https://github.com/conchaasensiomr/react-phone-catalog.git
+> ```
 
 #### ➡️ Node
 
