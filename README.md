@@ -8,6 +8,8 @@ The minimum requeriments were to have a **REST API** providing phone´s informat
 
 Should you like to take a look to the deployed app, [here you have the link](https://afternoon-mesa-14215.herokuapp.com/#/).
 
+> ℹ️ Please note that the first time you open the browser, it takes awhile to load.
+
 ---
 ## 🗂️ Content
 
