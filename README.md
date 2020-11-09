@@ -17,7 +17,7 @@ Should you like to take a look to the deployed app, [here you have the link](htt
 2. [Process](#️-process)
    1. [Back-end](#️-back-end)
    2. [Front-end](#-front-end)
-3. [Getting started](#-getting-started)
+3. [How to run the Apps](#-how-to-run-the-apps)
    1. [Pre-requeriments](#pre-requeriments)
    2. [Node](#️-node)
    3. [Docker](#-docker)
