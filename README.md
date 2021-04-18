@@ -1,8 +1,6 @@
 # 📱 REACT - Phone Catalog
 
-This project is a code test for a Front-end developer selection process. The challenge is to create a phone catalogue app.
-
-The minimum requeriments were to have a **REST API** providing phone´s information and implemented using NodeJS/Rails/Java... I chose NodeJS. It also must have a **REACT APP** allowing the user to browse the phones catlog.
+This project a phone catalogue app which must have a **REST API** providing phone´s information and implemented using NodeJS/Rails/Java... I chose NodeJS. It also must have a **REACT APP** allowing the user to browse the phones catlog.
 
 ## 🌐 Link to the App.
 
